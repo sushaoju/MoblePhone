@@ -1,16 +1,7 @@
 @charset "utf-8";
 
-
-/*********************  头部  **********************/
-.head-wrap{
-    width: 100%;
-    height: 56px;
-    position: relative;
-
-    background-color: #1dabc5;
-    box-sizing: border-box;
-}
-.h-logo{
+/******************** 头部 ********************/
+.head-wrap .h-logo{
     height: 35px;
     position: relative;
     float: left;
@@ -22,55 +13,42 @@
     font-size: 18px;
     font-weight: 700;
 }
-.h-act{
-    width: 107px;
-    height: 56px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    /*背景色不用注释*/
-    /*background-color: lightsalmon;*/
-}
 .h-login{
+    width: 50px;
     height: 56px;
     position: relative;
+    box-sizing: border-box;
     padding:15px 0;
     float: left;
-    line-height: 56px;
-}
 
+    line-height: 56px;
+
+}
+.h-login:after{
+    width: 0px;
+    height: 45px;
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: 0;
+    border-right: 1px solid #fff;
+}
 .h-login .a-login{
-    margin-right: 2px;
+    margin: auto;
     display: block;
-    padding: 0 15px;
     color: #fff;
     font-size: 14px;
     background-position: 0 -1px;
 }
-.h-search{
-    height: 56px;
-    position: relative;
-    padding:15px 0;
-    float: right;
-    box-sizing: border-box;
-    line-height: 56px;
-}
-.h-search .a-search{
-    display: block;
-    padding: 0 15px;
-    color: #fff;
-    font-size: 14px;
-    background-position: 0 -23px;
-}
 
-
-
-/**********************  导航部分 ******************/
+/******************** 导航 ********************/
 .navct{
     width: 100%;
     height: 219px;
     position: relative;
+    box-sizing: border-box;
     padding: 5px 0 20px;
+
 }
 .navct table{
     width: 100%;
@@ -87,7 +65,7 @@
     display: block;
 
     margin: 0 auto;
-    padding: 11px 0 0;
+    padding: 11px 0  0;
     border-radius: 10px;
 }
 .navct em{
@@ -96,7 +74,7 @@
     display: block;
 
     margin: 0 auto;
-    background: url("../img/icon-nav.png") no-repeat;
+    background: url("../image/icon-nav.png") no-repeat;
     background-size: 34px;
 }
 .navct .sale{
@@ -118,8 +96,8 @@
     background-position: 0 -68px;
 }
 .navct .bookshelf{
-     background-color: #30c1ff;
- }
+    background-color: #30c1ff;
+}
 .navct .bookshelf em{
     background-position: 0 -136px;
 }
@@ -130,8 +108,8 @@
     background-position: 0 0;
 }
 .navct .redeem{
-     background-color: #4f8fd6;
- }
+    background-color: #4f8fd6;
+}
 .navct .redeem em{
     background-position: 0 -170px;
 }
@@ -149,11 +127,11 @@
 }
 
 
-
-/**********************  精品推荐 ******************/
+/******************** 精品推荐 ********************/
 .u-area{
     border-top: 1px solid #ccc;
 }
+
 .ttl3{
     height: 50px;
     position: relative;
@@ -172,7 +150,7 @@
 
     color: #666;
 
-    background: url("../img/arr_right.png") right center no-repeat;
+    background: url("../image/arr_right.png") right center no-repeat;
     background-size: 8px 12px;
 }
 
@@ -223,6 +201,7 @@
 }
 
 .aimg{
+    height: 89px;
     padding: 0 3%;
 }
 .aimg ul{
@@ -248,16 +227,3 @@
     border-radius: 6px;
 }
 
-/**********************  footer ******************/
-.ft{
-    padding: 0 10px 20px;
-    margin: 0 auto;
-}
-.f-wrap{
-    color: #999;
-    line-height: 2em;
-    text-align: center;
-}
-.f-wrap a{
-    color: #999;
-}
